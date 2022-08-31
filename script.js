@@ -1,0 +1,58 @@
+// list
+function btn(params){
+    let serial = document.getElementById('serialmanga');
+    let web = document.getElementById('webmanga');
+    if(params == 'serial'){
+        web.style.display = 'none';
+        serial.style.display = 'block';
+    }
+    else{
+        web.style.display = 'block';
+        serial.style.display = 'none';
+    }
+    
+}
+
+// mode
+const toggle = document.getElementById('mode');
+const mode = document.getElementById('mode');
+const header = document.getElementById('header');
+const headera = document.getElementById('headera');
+const headerb = document.getElementById('headerb');
+const headerc = document.getElementById('headerc');
+let tema = localStorage.getItem('tema');
+
+const modeGelap = () => {
+    document.body.classList.add('body2');
+    header.classList.add('header2');
+    mode.classList.add('mode2');
+    headera.classList.add('header2');
+    headerb.classList.add('header2');
+    headerc.classList.add('headerinfo2');
+    logo.style.filter = 'invert(85%)';
+    localStorage.setItem('tema', 'gelap');
+};
+
+const modeCerah = () => {
+    document.body.classList.remove('body2')
+    header.classList.remove('header2');
+    mode.classList.remove('mode2');
+    headera.classList.remove('header2');
+    headerb.classList.remove('header2');
+    headerc.classList.remove('headerinfo2');
+    logo.style.filter = 'invert(0%)';
+    localStorage.setItem('tema', 'cerah')
+};
+
+if(tema === 'gelap'){
+    modeGelap();
+}
+
+toggle.addEventListener("click", (e) =>{
+    tema = localStorage.getItem('tema');
+    if (tema === 'cerah'){
+        modeGelap();
+    } else{
+        modeCerah();
+    }
+});
