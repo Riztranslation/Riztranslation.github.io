@@ -337,6 +337,7 @@ body::-webkit-scrollbar-thumb{
     border: 2px solid gray;
 }
 .fchat p{
+    display: none;
     opacity: 0%;
 }
 .headerfp {
@@ -458,6 +459,9 @@ body::-webkit-scrollbar-thumb{
         flex:100%;
         overflow: visible;
         height: fit-content;   
+    }
+    .fchat{
+      display: block;
     }
     .text {
         font-size: smaller;
