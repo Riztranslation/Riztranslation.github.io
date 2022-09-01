@@ -75,7 +75,7 @@ li{
 }
 ::-webkit-scrollbar{
     width: 2px;
-    height: 0px;
+    height: 2px;
 }
 ::-webkit-scrollbar-track{
     box-shadow: inset aliceblue;
@@ -123,6 +123,8 @@ body::-webkit-scrollbar-thumb{
 .deskripsi{
     width: 200px;
     display: table;
+    height: 139px ;
+    overflow: hidden;
 }
 .sinop{
     line-height: 1.2;
@@ -140,20 +142,34 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
 .chapter{
+
     color: black;
     font-size: small;
     text-decoration: none;
     opacity: 90%;
-    border: 1px solid;
-    border-radius: 5px;
-    background-color: gray;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
     margin: 5px;
+    font-weight:500;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    background-color:rgb(161, 167, 171);
+}
+.jam{
+    text-align: left;
+    margin-left:8px ;
+    font-size: 0.6em;
+    color: gray;
+    margin-top: 3px;
 }
 .chapter:hover{
+    transition: 0.3s;
     opacity: 90%;
-    border: 1px solid;
     border-radius: 5px;
-    background-color:rgb(194, 203, 210);
+    background-color:rgb(139, 145, 149);
     margin: 5px;
 }
 .header{
@@ -294,9 +310,6 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     text-decoration: none;
 }
-.chatago{
-  margin-top:5px;
-}
 .fppost{
     position: static;
     margin: 3px;
@@ -324,8 +337,7 @@ body::-webkit-scrollbar-thumb{
     border: 2px solid gray;
 }
 .fchat p{
-  height:5px;
-opacity:0%;
+    opacity: 0%;
 }
 .headerfp {
     z-index: 1 ;
@@ -440,6 +452,7 @@ opacity:0%;
     line-height: 1.6;
     font-size: 0.9em;
 }
+
 @media only screen and (max-width: 600px) {
     .ffp, .fchat{
         flex:100%;
