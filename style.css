@@ -2,99 +2,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 
 *,
-html{
+html {
     margin: 0;
     padding: 0;
     font-family: 'Epilogue', sans-serif;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background-color:aliceblue;
+    background-color: aliceblue;
 }
-.body2{
+
+.body2 {
     background-color: rgb(47, 42, 42);
 }
-.container{
+
+.container {
     position: sticky;
-    background-color: grey ;
+    background-color: grey;
     align-items: center;
     border-color: gray;
     height: 40px;
     width: 100%;
-    top:0;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    z-index: 4 ;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    z-index: 4;
 }
-li{
+
+li {
     list-style: none;
 }
-.text{
+
+.text {
     margin-top: 4.5px;
     position: relative;
     font-size: 1em;
 }
 
-#listnav, #sosialnav, #infonav{
-    color: aliceblue ;
+#listnav, #sosialnav, #infonav {
+    color: aliceblue;
     text-decoration: none;
 }
-.text:hover{
+
+.text:hover {
     font-weight: bold;
 }
-.style{
+
+.style {
     align-items: center;
     position: relative;
     display: flex;
     gap: 30px;
 }
-.logo{
+
+.logo {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-top: 4.5px;
     opacity: 90%;
     margin-left: 15px;
     /* border: 1px solid gray; */
     border-radius: 5px;
-    height:30px;
+    height: 30px;
     width: 30px;
     background-color: aliceblue;
     background-repeat: no-repeat;
     background-image: url(assets/Icon/rizlogo.png);
     background-size: cover;
 }
-.kotak::-webkit-scrollbar{
+
+.kotak::-webkit-scrollbar {
     width: 0px;
     height: 2px;
 }
-.kotak::-webkit-scrollbar-track{
+
+.kotak::-webkit-scrollbar-track {
     box-shadow: inset aliceblue;
 }
-.kotak::-webkit-scrollbar-thumb{
+
+.kotak::-webkit-scrollbar-thumb {
     background: grey;
     border-radius: 10px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 2px;
     height: 2px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     box-shadow: inset aliceblue;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: grey;
     border-radius: 10px;
 }
-body::-webkit-scrollbar{
-    width:5px;
+
+body::-webkit-scrollbar {
+    width: 5px;
     height: 2px;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 0 5px rgb(194, 203, 210);
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background: grey;
 }
-.kotak{
+
+.kotak {
     padding: 10px;
     display: flex;
     gap: 5px;
@@ -104,75 +122,16 @@ body::-webkit-scrollbar-thumb{
     scroll-padding: 250px;
     column-gap: 20px;
 }
-.kartu{ 
-    scroll-snap-align: start ;
+
+.kartu {
+    scroll-snap-align: start;
     border-radius: 5px;
-    display: flex;
-    height: 139px;
     margin-left: 50px;
-    background-color:rgb(194, 203, 210);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.judul{
-    text-transform: capitalize ;
-    margin: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-}
-.deskripsi{
-    width: 200px;
-    display: table;
-    height: 139px ;
-    overflow: hidden;
-}
-.sinop{
-    line-height: 1.2;
-    margin: 5px;
-    font-size: 10px;
-}
-.img{
-    filter: grayscale(0);
-    border-radius: 5px;
-    height: 139px;
-}
-.img:hover{
-    transition: 0.3s;
-    transform: rotate(3deg);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
-}
-.chapter{
 
-    color: black;
-    font-size: small;
-    text-decoration: none;
-    opacity: 90%;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 500;
-    margin: 5px;
-    font-weight:500;
-    height: 20px;
-    width: 80px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    background-color:rgb(161, 167, 171);
-}
-.jam{
-    text-align: left;
-    margin-left:8px ;
-    font-size: 0.6em;
-    color: gray;
-    margin-top: 3px;
-}
-.chapter:hover{
-    transition: 0.3s;
-    opacity: 90%;
-    border-radius: 5px;
-    background-color:rgb(139, 145, 149);
-    margin: 5px;
-}
-.header{
+.header {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 5px;
     margin-bottom: 10px;
@@ -183,7 +142,8 @@ body::-webkit-scrollbar-thumb{
     height: 25px;
     border-bottom: 1px solid rgb(194, 203, 210);
 }
-.header2{
+
+.header2 {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 5px;
     margin-bottom: 10px;
@@ -195,11 +155,12 @@ body::-webkit-scrollbar-thumb{
     border-bottom: 1px solid gray;
 }
 
-.containerlist{
+.containerlist {
     height: 300px;
     overflow: hidden;
 }
-#kotak2{
+
+#kotak2 {
     padding: 10px;
     display: flex;
     gap: 100px;
@@ -207,20 +168,23 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
     overflow: scroll;
 }
-.pilihlist{
+
+.pilihlist {
     color: gray;
     padding: 5px;
 }
-.serial{
+
+.serial {
     margin: 5px;
     display: block;
     overflow: scroll;
     border-radius: 10px;
-    border:solid 2px gray ;
+    border: solid 2px gray;
     height: 230px;
-} 
-.serial h4{
-    z-index: 2 ;
+}
+
+.serial h4 {
+    z-index: 2;
     position: absolute;
     width: 100px;
     border-radius: 5px 0px 5px 0px;
@@ -229,16 +193,18 @@ body::-webkit-scrollbar-thumb{
     padding: 5px;
     color: aliceblue;
 }
-.web{
+
+.web {
     margin: 5px;
     display: none;
     overflow: scroll;
     border-radius: 10px;
-    border:solid 2px gray ;
+    border: solid 2px gray;
     height: 230px;
-} 
-.web h4{
-    z-index: 2 ;
+}
+
+.web h4 {
+    z-index: 2;
     position: absolute;
     width: 100px;
     border-radius: 5px 0px 5px 0px;
@@ -247,6 +213,7 @@ body::-webkit-scrollbar-thumb{
     padding: 5px;
     color: aliceblue;
 }
+
 .ichika, .trinity, .hatsukoi, .cuprum, .isekai, .rokudo, .kuroha, .accelerator, .koisuru, .yuki, .dorei, .parasite, .Tagahumika, .osananajimi, .myhero, .mangaka, .hitomebore, .line, .nozokimi, .zombie, .sachan, .anotoki, .deliquent {
     box-shadow: inset 0px -15px 20px -15px black;
     height: 180px;
@@ -254,11 +221,12 @@ body::-webkit-scrollbar-thumb{
     width: 120px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    transition: 0.3s ;
+    transition: 0.3s;
     cursor: pointer;
     background-position: center;
 }
-.cardo{
+
+.cardo {
     justify-content: center;
     align-content: center;
     padding: 27px;
@@ -266,33 +234,104 @@ body::-webkit-scrollbar-thumb{
     flex-wrap: wrap;
     gap: 25px;
 }
-.ichika{background-image: url(https://pbs.twimg.com/media/FaHhwZLUcAE0_3G?format=jpg&name=360x360);}
-.trinity{background-image: url(https://pbs.twimg.com/media/FaHhUBzUEAIg80n?format=jpg&name=360x360);}
-.hatsukoi{background-image: url(https://pbs.twimg.com/media/FaHh5hMVUAAUXD8?format=jpg&name=small);}
-.cuprum{background-image: url(https://pbs.twimg.com/media/FaHh5hKVQAEr1RY?format=jpg&name=360x360);}
-.isekai{background-image: url(https://pbs.twimg.com/media/FaHh5hPVsAAc6xF?format=jpg&name=360x360);} 
-.rokudo{background-image: url(https://pbs.twimg.com/media/FaHhnWzUsAIr_5O?format=jpg&name=360x360);} 
-.kuroha{background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);} 
-.accelerator{background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);} 
-.koisuru{background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);} 
-.yuki{background-image: url(https://pbs.twimg.com/media/FaHhTVVUsAAz7mZ?format=jpg&name=360x360);} 
-.dorei{background-image: url(https://pbs.twimg.com/media/FaHhwZNVsAINflw?format=jpg&name=360x360);} 
-.parasite{ background-image: url(https://pbs.twimg.com/media/FaHhnWyVQAAjFer?format=jpg&name=360x360);}
-.Tagahumika{background-image:url(https://pbs.twimg.com/media/FaHhTVTUUAE-lFa?format=jpg&name=360x360);} 
-.osananajimi{background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAA0B6-?format=jpg&name=360x360);} 
-.myhero{background-image: url(https://pbs.twimg.com/media/FaHiOf7VUAAu8OW?format=jpg&name=360x360)} 
-.mangaka{background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAE3j-6?format=jpg&name=small)} 
-.hitomebore{background-image: url(https://pbs.twimg.com/media/FaHiD8PVQAIqdc_?format=jpg&name=360x360)} 
-.line{background-image: url(https://pbs.twimg.com/media/FaHiD8LVEAER4vI?format=jpg&name=small)} 
-.nozokimi{background-image: url(https://pbs.twimg.com/media/FaHiOgYUUAMdUtj?format=jpg&name=small)} 
-.zombie{background-image: url(https://pbs.twimg.com/media/FaHiOf8VEAEBxXK?format=jpg&name=360x360)} 
-.sachan{background-image: url(https://pbs.twimg.com/media/FaHhTVUUIAA1GeT?format=jpg&name=360x360)} 
-.anotoki{background-image: url(https://pbs.twimg.com/media/FaHiEaGUYAEo5to?format=jpg&name=360x360)} 
-.deliquent{background-image: url(https://pbs.twimg.com/media/FaHiD8PVUAEQG_M?format=jpg&name=360x360)}
+
+.ichika {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZLUcAE0_3G?format=jpg&name=360x360);
+}
+
+.trinity {
+    background-image: url(https://pbs.twimg.com/media/FaHhUBzUEAIg80n?format=jpg&name=360x360);
+}
+
+.hatsukoi {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hMVUAAUXD8?format=jpg&name=small);
+}
+
+.cuprum {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hKVQAEr1RY?format=jpg&name=360x360);
+}
+
+.isekai {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hPVsAAc6xF?format=jpg&name=360x360);
+}
+
+.rokudo {
+    background-image: url(https://pbs.twimg.com/media/FaHhnWzUsAIr_5O?format=jpg&name=360x360);
+}
+
+.kuroha {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);
+}
+
+.accelerator {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);
+}
+
+.koisuru {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);
+}
+
+.yuki {
+    background-image: url(https://pbs.twimg.com/media/FaHhTVVUsAAz7mZ?format=jpg&name=360x360);
+}
+
+.dorei {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZNVsAINflw?format=jpg&name=360x360);
+}
+
+.parasite {
+    background-image: url(https://pbs.twimg.com/media/FaHhnWyVQAAjFer?format=jpg&name=360x360);
+}
+
+.Tagahumika {
+    background-image: url(https://pbs.twimg.com/media/FaHhTVTUUAE-lFa?format=jpg&name=360x360);
+}
+
+.osananajimi {
+    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAA0B6-?format=jpg&name=360x360);
+}
+
+.myhero {
+    background-image: url(https://pbs.twimg.com/media/FaHiOf7VUAAu8OW?format=jpg&name=360x360)
+}
+
+.mangaka {
+    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAE3j-6?format=jpg&name=small)
+}
+
+.hitomebore {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8PVQAIqdc_?format=jpg&name=360x360)
+}
+
+.line {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8LVEAER4vI?format=jpg&name=small)
+}
+
+.nozokimi {
+    background-image: url(https://pbs.twimg.com/media/FaHiOgYUUAMdUtj?format=jpg&name=small)
+}
+
+.zombie {
+    background-image: url(https://pbs.twimg.com/media/FaHiOf8VEAEBxXK?format=jpg&name=360x360)
+}
+
+.sachan {
+    background-image: url(https://pbs.twimg.com/media/FaHhTVUUIAA1GeT?format=jpg&name=360x360)
+}
+
+.anotoki {
+    background-image: url(https://pbs.twimg.com/media/FaHiEaGUYAEo5to?format=jpg&name=360x360)
+}
+
+.deliquent {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8PVUAEQG_M?format=jpg&name=360x360)
+}
+
 .ichika:hover, .trinity:hover, .hatsukoi:hover, .cuprum:hover, .isekai:hover, .rokudo:hover, .kuroha:hover, .accelerator:hover, .koisuru:hover, .yuki:hover, .dorei:hover, .parasite:hover, .Tagahumika:hover, .osananajimi:hover, .myhero:hover, .mangaka:hover, .hitomebore:hover, .line:hover, .nozokimi:hover, .zombie:hover, .sachan:hover, .anotoki:hover, .deliquent:hover {
     background-size: 120% 120%;
 }
-.label{
+
+.label {
     display: table-cell;
     text-align: center;
     text-justify: center;
@@ -304,44 +343,49 @@ body::-webkit-scrollbar-thumb{
     text-shadow: 0 1px 3px black;
     color: white;
 }
+
 .decorationlabel {
     display: block;
     height: 180px;
     width: 100%;
     text-decoration: none;
 }
-.fppost{
+
+.fppost {
     position: static;
     margin: 3px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.ffp{
-    display:block;
+
+.ffp {
+    display: block;
     flex: 30%;
     overflow: scroll;
-    height: 640px; 
+    height: 640px;
     padding-bottom: 10px;
-    width:fit-content;
+    width: fit-content;
     margin: auto;
     border: 2px solid gray;
     border-radius: 5px;
 }
-.fchat{
+
+.fchat {
     border-radius: 5px;
     flex: 30%;
-    margin: auto; 
-    height: 650px; 
-    width:fit-content; 
+    margin: auto;
+    height: 650px;
+    width: fit-content;
     border: 2px solid gray;
 }
-.fchat p{
-    display: none;
-    opacity: 0%;
+
+.fchat iframe {
+    margin-top: 20px;
 }
+
 .headerfp {
-    z-index: 1 ;
+    z-index: 1;
     position: absolute;
     width: 100px;
     border-radius: 3px 0px 3px 0px;
@@ -350,7 +394,8 @@ body::-webkit-scrollbar-thumb{
     padding: 5px;
     color: aliceblue;
 }
-.pilihlist button{
+
+.pilihlist button {
     text-align: center;
     background-color: gray;
     color: aliceblue;
@@ -361,14 +406,17 @@ body::-webkit-scrollbar-thumb{
     border-radius: 3px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.pilihlist button:hover{
-    background-color:#5c5c5c;
+
+.pilihlist button:hover {
+    background-color: #5c5c5c;
 }
-.info{
+
+.info {
     width: 100%;
     background-color: gray;
 }
-.deskripsifoot{
+
+.deskripsifoot {
     width: 100%;
     color: aliceblue;
     margin-top: 10px;
@@ -376,78 +424,88 @@ body::-webkit-scrollbar-thumb{
     line-height: 1.6;
     font-size: smaller;
     /* margin-left: 65px; */
-    width:80%;
+    width: 80%;
     text-align: center;
     text-justify: center;
 }
-.sosmed{
+
+.sosmed {
     margin: 5px;
     height: 30px;
     border-bottom: 1px solid aliceblue;
 }
-.headerinfo{
+
+.headerinfo {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin:5px;
+    margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     font-weight: light;
     color: gray;
     height: 25px;
 }
-.headerinfo2{
+
+.headerinfo2 {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin:5px;
+    margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     font-weight: light;
     color: aliceblue;
     height: 25px;
 }
-.toggle{
+
+.toggle {
     position: absolute;
     opacity: 0%;
     margin-top: 5px;
     margin-right: 5px;
     transform: translate(15px);
     border: none;
-   border-radius: 5px;
-   width: 30px;
-   height: 30px;
-   display: inline-block;
-   background-color: rgb(47, 42, 42);
-   cursor: pointer;
-   color: aliceblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(47, 42, 42);
+    cursor: pointer;
+    color: aliceblue;
 }
-.sosmed{
+
+.sosmed {
     align-content: center;
     justify-content: center;
     display: flex;
     gap: 15px;
 }
+
 .sosmed a {
-    margin-top:5px;
+    margin-top: 5px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
     font-size: small;
 }
+
 .sosmed a:hover {
     color: #5c5c5c;
     font-size: small;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .power {
     height: 20px;
     width: 20px;
 }
-.bawah{
+
+.bawah {
     align-content: center;
     justify-content: center;
     width: 100%;
     display: flex;
     gap: 10px;
 }
-.bawah > p {
+
+.bawah>p {
     color: rgb(194, 203, 210);
     position: relative;
     line-height: 1.6;
@@ -455,14 +513,16 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media only screen and (max-width: 600px) {
-    .ffp, .fchat{
-        flex:100%;
+    .ffp, .fchat {
+        flex: 100%;
         overflow: visible;
-        height: fit-content;   
+        height: fit-content;
     }
-    .fchat{
-      display: block;
+
+    .fchat {
+        display: block;
     }
+
     .text {
         font-size: smaller;
     }
