@@ -10,24 +10,33 @@ html {
 }
 
 body {
-    transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: background-color 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-color: aliceblue;
+    user-select: none;
 }
 
 .body2 {
     background-color: rgb(47, 42, 42);
+    user-select: none;
 }
 
 .container {
-    position: sticky;
-    background-color: grey;
+    position: fixed;
+    backdrop-filter: blur(20px);
     align-items: center;
     border-color: gray;
     height: 40px;
     width: 100%;
     top: 0;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2); */
     z-index: 4;
+    border-bottom: solid 1px gray;
+}
+
+.bg--nav {
+    height: 42px;
+    background-color: gray;
+    width: 100%;
 }
 
 li {
@@ -43,10 +52,13 @@ li {
 #listnav, #sosialnav, #infonav {
     color: aliceblue;
     text-decoration: none;
+    text-shadow: 0 0 3px gray, 0 0 5px gray;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text:hover {
-    font-weight: bold;
+    filter: brightness(50%);
+    transition: ease-in 0.3s;
 }
 
 .style {
@@ -54,6 +66,16 @@ li {
     position: relative;
     display: flex;
     gap: 30px;
+    padding-right: 5px;
+}
+
+.bg {
+
+    background-color: gray;
+    height: 40px;
+    width: 100%;
+    opacity: 80%;
+    position: fixed
 }
 
 .logo {
@@ -65,7 +87,6 @@ li {
     border-radius: 5px;
     height: 30px;
     width: 30px;
-    background-color: aliceblue;
     background-repeat: no-repeat;
     background-image: url(assets/Icon/rizlogo.png);
     background-size: cover;
@@ -100,16 +121,18 @@ li {
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
-    height: 2px;
+    width: 10px;
+    height: 0px;
+    background-color: rgb(181, 185, 189);
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0 5px rgb(194, 203, 210);
+    box-shadow: inset aliceblue;
 }
 
 body::-webkit-scrollbar-thumb {
     background: grey;
+    border-radius: 0;
 }
 
 .kotak {
@@ -132,24 +155,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header {
-    transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: color 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 5px;
     margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: medium;
-    font-weight: light;
+    font-weight: 500;
     color: gray;
     height: 25px;
     border-bottom: 1px solid rgb(194, 203, 210);
 }
 
 .header2 {
-    transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: color 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 5px;
     margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: medium;
-    font-weight: light;
+    font-weight: 500;
     color: aliceblue;
     height: 25px;
     border-bottom: 1px solid gray;
@@ -214,18 +237,6 @@ body::-webkit-scrollbar-thumb {
     color: aliceblue;
 }
 
-.ichika, .trinity, .hatsukoi, .cuprum, .isekai, .rokudo, .kuroha, .accelerator, .koisuru, .yuki, .dorei, .parasite, .Tagahumika, .osananajimi, .myhero, .mangaka, .hitomebore, .line, .nozokimi, .zombie, .sachan, .anotoki, .deliquent {
-    box-shadow: inset 0px -15px 20px -15px black;
-    height: 180px;
-    border-radius: 5px;
-    width: 120px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transition: 0.3s;
-    cursor: pointer;
-    background-position: center;
-}
-
 .cardo {
     justify-content: center;
     align-content: center;
@@ -233,102 +244,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-}
-
-.ichika {
-    background-image: url(https://pbs.twimg.com/media/FaHhwZLUcAE0_3G?format=jpg&name=360x360);
-}
-
-.trinity {
-    background-image: url(https://pbs.twimg.com/media/FaHhUBzUEAIg80n?format=jpg&name=360x360);
-}
-
-.hatsukoi {
-    background-image: url(https://pbs.twimg.com/media/FaHh5hMVUAAUXD8?format=jpg&name=small);
-}
-
-.cuprum {
-    background-image: url(https://pbs.twimg.com/media/FaHh5hKVQAEr1RY?format=jpg&name=360x360);
-}
-
-.isekai {
-    background-image: url(https://pbs.twimg.com/media/FaHh5hPVsAAc6xF?format=jpg&name=360x360);
-}
-
-.rokudo {
-    background-image: url(https://pbs.twimg.com/media/FaHhnWzUsAIr_5O?format=jpg&name=360x360);
-}
-
-.kuroha {
-    background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);
-}
-
-.accelerator {
-    background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);
-}
-
-.koisuru {
-    background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);
-}
-
-.yuki {
-    background-image: url(https://pbs.twimg.com/media/FaHhTVVUsAAz7mZ?format=jpg&name=360x360);
-}
-
-.dorei {
-    background-image: url(https://pbs.twimg.com/media/FaHhwZNVsAINflw?format=jpg&name=360x360);
-}
-
-.parasite {
-    background-image: url(https://pbs.twimg.com/media/FaHhnWyVQAAjFer?format=jpg&name=360x360);
-}
-
-.Tagahumika {
-    background-image: url(https://pbs.twimg.com/media/FaHhTVTUUAE-lFa?format=jpg&name=360x360);
-}
-
-.osananajimi {
-    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAA0B6-?format=jpg&name=360x360);
-}
-
-.myhero {
-    background-image: url(https://pbs.twimg.com/media/FaHiOf7VUAAu8OW?format=jpg&name=360x360)
-}
-
-.mangaka {
-    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAE3j-6?format=jpg&name=small)
-}
-
-.hitomebore {
-    background-image: url(https://pbs.twimg.com/media/FaHiD8PVQAIqdc_?format=jpg&name=360x360)
-}
-
-.line {
-    background-image: url(https://pbs.twimg.com/media/FaHiD8LVEAER4vI?format=jpg&name=small)
-}
-
-.nozokimi {
-    background-image: url(https://pbs.twimg.com/media/FaHiOgYUUAMdUtj?format=jpg&name=small)
-}
-
-.zombie {
-    background-image: url(https://pbs.twimg.com/media/FaHiOf8VEAEBxXK?format=jpg&name=360x360)
-}
-
-.sachan {
-    background-image: url(https://pbs.twimg.com/media/FaHhTVUUIAA1GeT?format=jpg&name=360x360)
-}
-
-.anotoki {
-    background-image: url(https://pbs.twimg.com/media/FaHiEaGUYAEo5to?format=jpg&name=360x360)
-}
-
-.deliquent {
-    background-image: url(https://pbs.twimg.com/media/FaHiD8PVUAEQG_M?format=jpg&name=360x360)
-}
-
-.ichika:hover, .trinity:hover, .hatsukoi:hover, .cuprum:hover, .isekai:hover, .rokudo:hover, .kuroha:hover, .accelerator:hover, .koisuru:hover, .yuki:hover, .dorei:hover, .parasite:hover, .Tagahumika:hover, .osananajimi:hover, .myhero:hover, .mangaka:hover, .hitomebore:hover, .line:hover, .nozokimi:hover, .zombie:hover, .sachan:hover, .anotoki:hover, .deliquent:hover {
-    background-size: 120% 120%;
 }
 
 .label {
@@ -414,6 +329,7 @@ body::-webkit-scrollbar-thumb {
 .info {
     width: 100%;
     background-color: gray;
+    height: 100%;
 }
 
 .deskripsifoot {
@@ -438,9 +354,9 @@ body::-webkit-scrollbar-thumb {
 .headerinfo {
     transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: medium;
-    font-weight: light;
+    font-weight: 500;
     color: gray;
     height: 25px;
 }
@@ -492,29 +408,57 @@ body::-webkit-scrollbar-thumb {
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.power {
-    height: 20px;
-    width: 20px;
+.power p {
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
 }
 
 .bawah {
     align-content: center;
     justify-content: center;
-    width: 100%;
     display: flex;
     gap: 10px;
+    border-top: 1px solid aliceblue;
+    margin: 5px;
 }
 
 .bawah>p {
-    color: rgb(194, 203, 210);
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
     position: relative;
     line-height: 1.6;
     font-size: 0.9em;
+    font-size: smaller;
 }
-
+.search{
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px aliceblue;
+    height: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+.search::placeholder{
+    color: aliceblue ;
+}
+.search:focus::placeholder{
+    color:rgb(167, 170, 173) ;
+    transition: color 0.6s linear;
+}
+.search:focus{
+    transition: border-bottom 0.6s linear;
+    outline: none;
+    border-bottom: solid 1px rgb(167, 170, 173);
+}
+input::-webkit-calendar-picker-indicator{
+    opacity: 0%;
+}
 @media only screen and (max-width: 600px) {
     .ffp, .fchat {
-        flex: 100%;
+        flex: 90%;
         overflow: visible;
         height: fit-content;
     }
@@ -525,5 +469,8 @@ body::-webkit-scrollbar-thumb {
 
     .text {
         font-size: smaller;
+    }
+    .search{
+        width: 100%;
     }
 }

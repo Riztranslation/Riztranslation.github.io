@@ -20,6 +20,7 @@ const header = document.getElementById('header');
 const headera = document.getElementById('headera');
 const headerb = document.getElementById('headerb');
 const headerc = document.getElementById('headerc');
+const bglogo = document.getElementById('logo');
 let tema = localStorage.getItem('tema');
 
 const modeGelap = () => {
@@ -29,6 +30,7 @@ const modeGelap = () => {
     headera.classList.add('header2');
     headerb.classList.add('header2');
     headerc.classList.add('headerinfo2');
+    bglogo.classList.add('logo2');
     logo.style.filter = 'invert(85%)';
     localStorage.setItem('tema', 'gelap');
 };

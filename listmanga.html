@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list manga</title>
+    <link rel="stylesheet" href="style.css">
+    <base target="_top">
+    <style>
+        .list {
+            box-shadow: inset 0px -15px 20px -15px black;
+            height: 180px;
+            border-radius: 5px;
+            width: 120px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transition: 0.3s;
+            cursor: pointer;
+            background-position: center;
+        }
+
+        .list:hover {
+            background-size: 120% 120%;
+        }
+
+        .ichika {
+            background-image: url(https://pbs.twimg.com/media/FaHhwZLUcAE0_3G?format=jpg&name=360x360);
+        }
+
+        .trinity {
+            background-image: url(https://pbs.twimg.com/media/FaHhUBzUEAIg80n?format=jpg&name=360x360);
+        }
+
+        .hatsukoi {
+            background-image: url(https://pbs.twimg.com/media/FaHh5hMVUAAUXD8?format=jpg&name=small);
+        }
+
+        .cuprum {
+            background-image: url(https://pbs.twimg.com/media/FaHh5hKVQAEr1RY?format=jpg&name=360x360);
+        }
+
+        .isekai {
+            background-image: url(https://pbs.twimg.com/media/FaHh5hPVsAAc6xF?format=jpg&name=360x360);
+        }
+
+        .rokudo {
+            background-image: url(https://pbs.twimg.com/media/FaHhnWzUsAIr_5O?format=jpg&name=360x360);
+        }
+
+        .kuroha {
+            background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);
+        }
+
+        .accelerator {
+            background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);
+        }
+
+        .koisuru {
+            background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);
+        }
+
+        .yuki {
+            background-image: url(https://pbs.twimg.com/media/FaHhTVVUsAAz7mZ?format=jpg&name=360x360);
+        }
+
+        .dorei {
+            background-image: url(https://pbs.twimg.com/media/FaHhwZNVsAINflw?format=jpg&name=360x360);
+        }
+
+        .parasite {
+            background-image: url(https://pbs.twimg.com/media/FaHhnWyVQAAjFer?format=jpg&name=360x360);
+        }
+
+        .Tagahumika {
+            background-image: url(https://pbs.twimg.com/media/FaHhTVTUUAE-lFa?format=jpg&name=360x360);
+        }
+
+        .osananajimi {
+            background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAA0B6-?format=jpg&name=360x360);
+        }
+
+        .myhero {
+            background-image: url(https://pbs.twimg.com/media/FaHiOf7VUAAu8OW?format=jpg&name=360x360)
+        }
+
+        .mangaka {
+            background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAE3j-6?format=jpg&name=small)
+        }
+
+        .hitomebore {
+            background-image: url(https://pbs.twimg.com/media/FaHiD8PVQAIqdc_?format=jpg&name=360x360)
+        }
+
+        .line {
+            background-image: url(https://pbs.twimg.com/media/FaHiD8LVEAER4vI?format=jpg&name=small)
+        }
+
+        .nozokimi {
+            background-image: url(https://pbs.twimg.com/media/FaHiOgYUUAMdUtj?format=jpg&name=small)
+        }
+
+        .zombie {
+            background-image: url(https://pbs.twimg.com/media/FaHiOf8VEAEBxXK?format=jpg&name=360x360)
+        }
+
+        .sachan {
+            background-image: url(https://pbs.twimg.com/media/FaHhTVUUIAA1GeT?format=jpg&name=360x360)
+        }
+
+        .anotoki {
+            background-image: url(https://pbs.twimg.com/media/FaHiEaGUYAEo5to?format=jpg&name=360x360)
+        }
+
+        .deliquent {
+            background-image: url(https://pbs.twimg.com/media/FaHiD8PVUAEQG_M?format=jpg&name=360x360)
+        }
+
+        .ashita {
+            background-image: url(https://pbs.twimg.com/media/FcSzwhUakAAmXw7?format=jpg&name=4096x4096);
+        }
+    </style>
+</head>
+
+<body style="background-color: inherit;">
+    <div class="pilihlist">
+        <button onclick="btn('serial')">Serial</button>
+        <button onclick="btn('Web')">Web</button>
+    </div>
+    <div class="containerlist">
+        <div class="serial" id="serialmanga">
+            <h4>Manga Serial</h4>
+            <div class="cardo">
+                <div class="list ichika">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Tsuka no Ma no Ichika</p>
+                    </a>
+                </div>
+                <div class="list hatsukoi">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Hatsukoi Maze</p>
+                    </a>
+                </div>
+                <div class="list cuprum">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Cuprum's Bride</p>
+                    </a>
+                </div>
+                <div class="list trinity">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Okyu no Trinity</p>
+                    </a>
+                </div>
+                <div class="list isekai">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Ikidaore mo Dekinai Konna Isekai Ja</p>
+                    </a>
+                </div>
+                <div class="list rokudo">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Rokudo Tosoki</p>
+                    </a>
+                </div>
+                <div class="list kuroha">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Kuroha to Nijisuke</p>
+                    </a>
+                </div>
+                <div class="list accelerator">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Toaru Kagaku no Accelerator</p>
+                    </a>
+                </div>
+                <div class="list koisuru">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Kimi ni Koisuru Satsujinki</p>
+                    </a>
+                </div>
+                <div class="list dorei">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Kimi Janakya Damena Dorei Shoujo</p>
+                    </a>
+                </div>
+                <div class="list parasite">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Parasite in Love</p>
+                    </a>
+                </div>
+                <div class="list yuki">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Yuki no Niizuma wa Boku to Tokeaitai</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="web" id="webmanga">
+            <h4>Manga Web</h4>
+            <div class="cardo">
+                <div class="list Tagahumika">
+                    <a class="decorationlabel" href="https://riztranslation.github.io/tagahumika">
+                        <p class="label"> Tagahumika</p>
+                    </a>
+                </div></a>
+                <div class="list osananajimi">
+                    <a class="decorationlabel" href="https://riztranslation.github.io/Osananajimi">
+                        <p class="label"> Osananajimi ni Modoritai Bokura</p>
+                    </a>
+                </div>
+                <div class="list myhero">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Boku no Hero</p>
+                    </a>
+                </div>
+                <div class="list ashita">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Ashita Shinu Shoujo no Saigo no Hokagou</p>
+                    </a>
+                </div>
+                <div class="list mangaka">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Ore no Kanojo ga Mangaka ni naru</p>
+                    </a>
+                </div>
+                <div class="list hitomebore">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Hitomebore</p>
+                    </a>
+                </div>
+                <div class="list line">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> LINE Yang Tak Pernah Terbalas</p>
+                    </a>
+                </div>
+                <div class="list nozokimi">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Nozokimi</p>
+                    </a>
+                </div>
+                <div class="list zombie">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Zombie Darake ni Natta</p>
+                    </a>
+                </div>
+                <div class="list sachan">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Drugstore Tenin Sa-chan no Nichijo</p>
+                    </a>
+                </div>
+                <div class="list anotoki">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Anotoki Kara, Zutto</p>
+                    </a>
+                </div>
+                <div class="list deliquent">
+                    <a class="decorationlabel" href="">
+                        <p class="label"> Moto Yan Kanojo to Majime-kun</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -13,6 +13,7 @@
 <body>
     <!-- navbar -->
     <div class="container">
+        <div class="bg"></div>
         <ul class="style">
             <li>
                 <div id="logo" class="logo"></div>
@@ -21,149 +22,24 @@
             <li class="text"><a id="sosialnav" href="#sosial">Sosial</a></li>
             <li class="text"><a id="infonav" href="#info">Info</a></li>
             <button id="mode" class="toggle">◩</button>
+            <input class="search" onchange="window.location.href= this.value;" type="text" placeholder="Cari..." list="manga">
+            <datalist id="manga" role="listbox">
+                <option value="https://riztranslation.github.io/tagahumika">Tagahumika</option>
+                <option value="https://riztranslation.github.io/Osananajimi">Osananajimi ni Modoritai Bokura</option>
+            </datalist>
         </ul>
+
     </div>
+    <div class="bg--nav"></div>
     <!-- akhir navbar -->
     <div id="beranda">
         <h1 class="header" id="header">Update Baru-baru Ini</h1>
         <div class="kotak">
-            <iframe class="kartu" src="tagahumika.html" scrolling="no" frameborder="0"></iframe>
-            <iframe class="kartu" src="tagahumika.html" scrolling="no" frameborder="0"></iframe>
-            <iframe class="kartu" src="tagahumika.html" scrolling="no" frameborder="0"></iframe>
-            <iframe class="kartu" src="tagahumika.html" scrolling="no" frameborder="0"></iframe>
-            <iframe class="kartu" src="tagahumika.html" scrolling="no" frameborder="0"></iframe>
+            Sedang dalam pepmbuatan...
         </div>
         <h1 class="header" id="headera">List Manga</h1>
-        <div class="pilihlist">
-            <button onclick="btn('serial')">Serial</button>
-            <button onclick="btn('Web')">Web</button>
-        </div>
         <div class="containerlist">
-            <div class="serial" id="serialmanga">
-                <h4>Manga Serial</h4>
-                <div class="cardo">
-                    <div class="ichika">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Tsuka no Ma no Ichika</p>
-                        </a>
-                    </div>
-                    <div class="hatsukoi">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Hatsukoi Maze</p>
-                        </a>
-                    </div>
-                    <div class="cuprum">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Cuprum's Bride</p>
-                        </a>
-                    </div>
-                    <div class="trinity">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Okyu no Trinity</p>
-                        </a>
-                    </div>
-                    <div class="isekai">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Ikidaore mo Dekinai Konna Isekai Ja</p>
-                        </a>
-                    </div>
-                    <div class="rokudo">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Rokudo Tosoki</p>
-                        </a>
-                    </div>
-                    <div class="kuroha">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Kuroha to Nijisuke</p>
-                        </a>
-                    </div>
-                    <div class="accelerator">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Toaru Kagaku no Accelerator</p>
-                        </a>
-                    </div>
-                    <div class="koisuru">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Kimi ni Koisuru Satsujinki</p>
-                        </a>
-                    </div>
-                    <div class="dorei">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Kimi Janakya Damena Dorei Shoujo</p>
-                        </a>
-                    </div>
-                    <div class="parasite">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Parasite in Love</p>
-                        </a>
-                    </div>
-                    <div class="yuki">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Yuki no Niizuma wa Boku to Tokeaitai</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="web" id="webmanga">
-                <h4>Manga Web</h4>
-                <div class="cardo">
-                    <div class="Tagahumika">
-                        <a class="decorationlabel" href="https://riztranslation.github.io/tagahumika">
-                            <p class="label"> Tagahumika</p>
-                        </a>
-                    </div></a>
-                    <div class="osananajimi">
-                        <a class="decorationlabel" href="https://riztranslation.github.io/Osananajimi">
-                            <p class="label"> Osananajimi ni Modoritai Bokura</p>
-                        </a>
-                    </div>
-                    <div class="myhero">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Boku no Hero</p>
-                        </a>
-                    </div>
-                    <div class="mangaka">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Ore no Kanojo ga Mangaka ni naru</p>
-                        </a>
-                    </div>
-                    <div class="hitomebore">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Hitomebore</p>
-                        </a>
-                    </div>
-                    <div class="line">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> LINE Yang Tak Pernah Terbalas</p>
-                        </a>
-                    </div>
-                    <div class="nozokimi">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Nozokimi</p>
-                        </a>
-                    </div>
-                    <div class="zombie">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Zombie Darake ni Natta</p>
-                        </a>
-                    </div>
-                    <div class="sachan">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Drugstore Tenin Sa-chan no Nichijo</p>
-                        </a>
-                    </div>
-                    <div class="anotoki">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Anotoki Kara, Zutto</p>
-                        </a>
-                    </div>
-                    <div class="deliquent">
-                        <a class="decorationlabel" href="">
-                            <p class="label"> Moto Yan Kanojo to Majime-kun</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <iframe src="listmanga.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
         </div>
     </div>
     <div id="sosial">
@@ -191,7 +67,6 @@
             </div>
         </div>
     </div>
-    <div class="fb-comments" data-href="https://riztranslation.mymamga.repl.co" data-width="" data-numposts="5"></div>
     <h1 class="headerinfo" id="headerc">Info</h1>
     <div class="info" id="info">
         <div class="sosmed">
@@ -200,19 +75,17 @@
                 class="icons">Instagram</a>
             <a href="https://discord.gg/tTCzyaP9sj" class="icons">Discord</a>
         </div>
-
-        <center>
-            <p class="deskripsifoot">Semua komik yang ada di website ini hanya preview dari komik aslinya, jadi mungkin
-                akan ada kesalahan penerjemahan nama, alur cerita, atau yang lainnya. untuk komik aslinya bisa kalian
-                beli di toko-toko terdekat yang tersedia.</p>
-        </center>
+        <div class="power">
+            <center>
+                <p class="deskripsifoot">Semua komik yang ada di website ini hanya preview dari komik aslinya, jadi
+                    mungkin akan ada kesalahan penerjemahan nama, alur cerita, atau yang lainnya. untuk komik aslinya
+                    bisa kalian beli di toko-toko terdekat yang tersedia.</p>
+            </center>
+        </div>
         <div class="bawah">
             <p class="powered">Dibuat Oleh ©Riztranslation 2022 </p>
         </div>
     </div>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
-        nonce="c9OD2mZQ"></script>
     <script src="script.js" type="application/javascript"></script>
 </body>
 
