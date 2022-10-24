@@ -10,7 +10,17 @@
     <link rel="shorcut icon" href="assets/Icon/rizlogo.ico">
 </head>
 
-<body>
+<body onload="loads()" oncontextmenu="return false;" ondragstart="return false;">
+    <div class="loading" id="loading">Website sedang dimuat...</div>
+    <div class="loading--bg" id="loadingBg"></div>
+    <script>
+        function loads() {
+                const loading = document.getElementById("loading");
+                const bg = document.getElementById("loadingBg");
+                loading.style.display = "none";
+                bg.style.display = "none";
+        }
+</script>
     <!-- navbar -->
     <div class="container">
         <div class="bg"></div>
@@ -22,20 +32,33 @@
             <li class="text"><a id="sosialnav" href="#sosial">Sosial</a></li>
             <li class="text"><a id="infonav" href="#info">Info</a></li>
             <button id="mode" class="toggle">◩</button>
-            <input class="search" onchange="window.location.href= this.value;" type="text" placeholder="Cari..." list="manga">
-            <datalist id="manga" role="listbox">
+            <input id="search" class="search" type="text" placeholder="Cari..." list="manga">
+            <!-- <datalist id="manga" role="listbox">
                 <option value="https://riztranslation.github.io/tagahumika">Tagahumika</option>
-                <option value="https://riztranslation.github.io/Osananajimi">Osananajimi ni Modoritai Bokura</option>
-            </datalist>
+                <option value="https://riztranslation.github.io/osananajimi">Osananajimi ni Modoritai Bokura
+                </option>
+            </datalist> -->
         </ul>
-
+        <script>
+            document.getElementById("search").addEventListener("change", search);
+            function search() {
+                const cari = document.getElementById("search").value;
+                const index = cari.indexOf("riztranslation");
+                if (index == 8) {
+                    alert("Selamat Bersenang-senang ^_^🎈")
+                    window.location.href = cari;
+                } else {
+                    return;
+                }
+            }
+        </script>
     </div>
     <div class="bg--nav"></div>
     <!-- akhir navbar -->
     <div id="beranda">
         <h1 class="header" id="header">Update Baru-baru Ini</h1>
         <div class="kotak">
-            Sedang dalam pepmbuatan...
+            <a style="color: gray;" href="https://fb.me/riztranslation">Masih dalam pembuatan...</a>
         </div>
         <h1 class="header" id="headera">List Manga</h1>
         <div class="containerlist">
@@ -46,8 +69,14 @@
         <h1 class="header" id="headerb">Sosial</h1>
         <div class="fppost">
             <div class="fchat">
-                <h4 class="headerfp">Ruang Chat</h4>
-                <center><iframe src="https://deadsimplechat.com/rEcW_jxzj" width="95%" height="600px"></iframe></center>
+                <h4 class="headerfp ig">Instagram</h4>
+                <div class="elf"></div>
+                <center>
+                    <div loading="lazy" data-mc-src="6941fc6a-32b6-4a85-b4f5-13495d00e2ae#instagram"></div>
+
+                    <script src="https://cdn2.woxo.tech/a.js#6355e8ce2facf6e26ddd30b2" async data-usrc>
+                    </script>
+                </center>
             </div>
             <div class="ffp">
                 <h4 class="headerfp">Fp 1 dan 2</h4>
@@ -78,7 +107,8 @@
         <div class="power">
             <center>
                 <p class="deskripsifoot">Semua komik yang ada di website ini hanya preview dari komik aslinya, jadi
-                    mungkin akan ada kesalahan penerjemahan nama, alur cerita, atau yang lainnya. untuk komik aslinya
+                    mungkin akan ada kesalahan penerjemahan nama, alur cerita, atau yang lainnya. untuk komik
+                    aslinya
                     bisa kalian beli di toko-toko terdekat yang tersedia.</p>
             </center>
         </div>

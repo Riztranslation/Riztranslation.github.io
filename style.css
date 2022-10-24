@@ -7,17 +7,55 @@ html {
     padding: 0;
     font-family: 'Epilogue', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
+    overflow-x: hidden;
     transition: background-color 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-color: aliceblue;
     user-select: none;
 }
 
 .body2 {
+    overflow-x: hidden;
     background-color: rgb(47, 42, 42);
     user-select: none;
+}
+
+.loading {
+    z-index: 10;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    text-shadow: 0 0 10px #FFFFFF;
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    overflow: hidden;
+}
+.loading--bg {
+    z-index: 9;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(30px);
+}
+
+@keyframes myAnim {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
 }
 
 .container {
@@ -49,7 +87,7 @@ li {
     font-size: 1em;
 }
 
-#listnav, #sosialnav, #infonav {
+#listnav, #sosialnav, #infonav, #carinav {
     color: aliceblue;
     text-decoration: none;
     text-shadow: 0 0 3px gray, 0 0 5px gray;
@@ -197,6 +235,26 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .serial {
     margin: 5px;
     display: block;
@@ -204,12 +262,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: solid 2px gray;
     height: 230px;
+    animation: fadeIn 1s;
 }
 
 .serial h4 {
     z-index: 2;
     position: absolute;
-    width: 100px;
+    width: fit-content;
     border-radius: 5px 0px 5px 0px;
     background-color: gray;
     font-weight: lighter;
@@ -218,6 +277,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .web {
+    animation: fadeIn 1s;
     margin: 5px;
     display: none;
     overflow: scroll;
@@ -229,7 +289,7 @@ body::-webkit-scrollbar-thumb {
 .web h4 {
     z-index: 2;
     position: absolute;
-    width: 100px;
+    width: fit-content;
     border-radius: 5px 0px 5px 0px;
     background-color: gray;
     font-weight: lighter;
@@ -287,18 +347,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fchat {
-    border-radius: 5px;
+    display: block;
     flex: 30%;
-    margin: auto;
-    height: 650px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 640px;
+    padding-bottom: 10px;
     width: fit-content;
+    margin: auto;
     border: 2px solid gray;
+    border-radius: 5px;
 }
 
-.fchat iframe {
-    margin-top: 20px;
+.elf {
+    height: 20px;
 }
-
 .headerfp {
     z-index: 1;
     position: absolute;
@@ -309,7 +374,9 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
     color: aliceblue;
 }
-
+.ig{
+    transform: translateX(-5%);
+}
 .pilihlist button {
     text-align: center;
     background-color: gray;
@@ -430,7 +497,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 0.9em;
     font-size: smaller;
 }
-.search{
+
+.search {
     background: transparent;
     border: none;
     border-bottom: solid 1px aliceblue;
@@ -441,21 +509,140 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
 }
-.search::placeholder{
-    color: aliceblue ;
+
+.search::placeholder {
+    color: aliceblue;
 }
-.search:focus::placeholder{
-    color:rgb(167, 170, 173) ;
+
+.search:focus::placeholder {
+    color: rgb(167, 170, 173);
     transition: color 0.6s linear;
 }
-.search:focus{
+
+.search:focus {
     transition: border-bottom 0.6s linear;
     outline: none;
     border-bottom: solid 1px rgb(167, 170, 173);
 }
-input::-webkit-calendar-picker-indicator{
+
+input::-webkit-calendar-picker-indicator {
     opacity: 0%;
 }
+
+/* List manga */
+.list {
+    box-shadow: inset 0px -15px 20px -15px black;
+    height: 180px;
+    border-radius: 5px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    background-position: center;
+}
+
+.list:hover {
+    background-size: 120% 120%;
+}
+
+.ichika {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZLUcAE0_3G?format=jpg&name=360x360);
+}
+
+.trinity {
+    background-image: url(https://pbs.twimg.com/media/FaHhUBzUEAIg80n?format=jpg&name=360x360);
+}
+
+.hatsukoi {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hMVUAAUXD8?format=jpg&name=small);
+}
+
+.cuprum {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hKVQAEr1RY?format=jpg&name=360x360);
+}
+
+.isekai {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hPVsAAc6xF?format=jpg&name=360x360);
+}
+
+.rokudo {
+    background-image: url(https://pbs.twimg.com/media/FaHhnWzUsAIr_5O?format=jpg&name=360x360);
+}
+
+.kuroha {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);
+}
+
+.accelerator {
+    background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);
+}
+
+.koisuru {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);
+}
+
+.hyouka {
+    background-image: url(https://pbs.twimg.com/media/Em_PDzLWEAE50h3?format=jpg&name=4096x4096);
+}
+
+.dorei {
+    background-image: url(https://pbs.twimg.com/media/FaHhwZNVsAINflw?format=jpg&name=360x360);
+}
+
+.parasite {
+    background-image: url(https://pbs.twimg.com/media/FaHhnWyVQAAjFer?format=jpg&name=360x360);
+}
+
+.Tagahumika {
+    background-image: url(https://pbs.twimg.com/media/FaHhTVTUUAE-lFa?format=jpg&name=360x360);
+}
+
+.osananajimi {
+    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAA0B6-?format=jpg&name=360x360);
+}
+
+.myhero {
+    background-image: url(https://pbs.twimg.com/media/FaHiOf7VUAAu8OW?format=jpg&name=360x360)
+}
+
+.mangaka {
+    background-image: url(https://pbs.twimg.com/media/FaHhnW0UYAE3j-6?format=jpg&name=small)
+}
+
+.hitomebore {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8PVQAIqdc_?format=jpg&name=360x360)
+}
+
+.line {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8LVEAER4vI?format=jpg&name=small)
+}
+
+.nozokimi {
+    background-image: url(https://pbs.twimg.com/media/FaHiOgYUUAMdUtj?format=jpg&name=small)
+}
+
+.zombie {
+    background-image: url(https://pbs.twimg.com/media/FaHiOf8VEAEBxXK?format=jpg&name=360x360)
+}
+
+.sachan {
+    background-image: url(https://pbs.twimg.com/media/FaHhTVUUIAA1GeT?format=jpg&name=360x360)
+}
+
+.anotoki {
+    background-image: url(https://pbs.twimg.com/media/FaHiEaGUYAEo5to?format=jpg&name=360x360)
+}
+
+.deliquent {
+    background-image: url(https://pbs.twimg.com/media/FaHiD8PVUAEQG_M?format=jpg&name=360x360)
+}
+
+.ashita {
+    background-image: url(https://pbs.twimg.com/media/FcSzwhUakAAmXw7?format=jpg&name=4096x4096);
+}
+
+/* Responsive */
 @media only screen and (max-width: 600px) {
     .ffp, .fchat {
         flex: 90%;
@@ -470,7 +657,8 @@ input::-webkit-calendar-picker-indicator{
     .text {
         font-size: smaller;
     }
-    .search{
+
+    .search {
         width: 100%;
     }
 }

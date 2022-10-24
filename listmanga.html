@@ -52,17 +52,12 @@
         .kuroha {
             background-image: url(https://pbs.twimg.com/media/FaHhwZMUcAAaOjj?format=jpg&name=360x360);
         }
-
-        .accelerator {
-            background-image: url(https://pbs.twimg.com/media/FaHh5hLUIAEgdUX?format=jpg&name=360x360);
-        }
-
         .koisuru {
             background-image: url(https://pbs.twimg.com/media/FaHhwZLUEAAt7B8?format=jpg&name=360x360);
         }
 
-        .yuki {
-            background-image: url(https://pbs.twimg.com/media/FaHhTVVUsAAz7mZ?format=jpg&name=360x360);
+        .hyouka {
+            background-image: url(https://pbs.twimg.com/media/Em_PDzLWEAE50h3?format=jpg&name=4096x4096);
         }
 
         .dorei {
@@ -123,73 +118,80 @@
     </style>
 </head>
 
-<body style="background-color: inherit;">
+<body style="background-color: inherit;" oncontextmenu="return false;" ondragstart="return false;" onclick="return false" >
     <div class="pilihlist">
         <button onclick="btn('serial')">Serial</button>
         <button onclick="btn('Web')">Web</button>
     </div>
     <div class="containerlist">
         <div class="serial" id="serialmanga">
+            <div id="loading" class="loading">Sedang dimuat...</div>
+            <script>
+                const loading = document.getElementById("loading");
+                window.onload = function () {
+                    loading.style.display = "none";
+                }
+            </script>
             <h4>Manga Serial</h4>
             <div class="cardo">
                 <div class="list ichika">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Tsuka no Ma no Ichika</p>
                     </a>
                 </div>
                 <div class="list hatsukoi">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Hatsukoi Maze</p>
                     </a>
                 </div>
                 <div class="list cuprum">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Cuprum's Bride</p>
                     </a>
                 </div>
                 <div class="list trinity">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Okyu no Trinity</p>
                     </a>
                 </div>
                 <div class="list isekai">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Ikidaore mo Dekinai Konna Isekai Ja</p>
                     </a>
                 </div>
                 <div class="list rokudo">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Rokudo Tosoki</p>
                     </a>
                 </div>
                 <div class="list kuroha">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Kuroha to Nijisuke</p>
                     </a>
                 </div>
                 <div class="list accelerator">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Toaru Kagaku no Accelerator</p>
                     </a>
                 </div>
                 <div class="list koisuru">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Kimi ni Koisuru Satsujinki</p>
                     </a>
                 </div>
                 <div class="list dorei">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Kimi Janakya Damena Dorei Shoujo</p>
                     </a>
                 </div>
                 <div class="list parasite">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Parasite in Love</p>
                     </a>
                 </div>
-                <div class="list yuki">
-                    <a class="decorationlabel" href="">
-                        <p class="label"> Yuki no Niizuma wa Boku to Tokeaitai</p>
+                <div class="list hyouka">
+                    <a class="decorationlabel" href="index.html">
+                        <p class="label">hyouka</p>
                     </a>
                 </div>
             </div>
@@ -198,62 +200,62 @@
             <h4>Manga Web</h4>
             <div class="cardo">
                 <div class="list Tagahumika">
-                    <a class="decorationlabel" href="https://riztranslation.github.io/tagahumika">
+                    <a class="decorationlabel" href="index.htmlhttps://riztranslation.github.io/tagahumika">
                         <p class="label"> Tagahumika</p>
                     </a>
                 </div></a>
                 <div class="list osananajimi">
-                    <a class="decorationlabel" href="https://riztranslation.github.io/Osananajimi">
+                    <a class="decorationlabel" href="index.htmlhttps://riztranslation.github.io/Osananajimi">
                         <p class="label"> Osananajimi ni Modoritai Bokura</p>
                     </a>
                 </div>
                 <div class="list myhero">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Boku no Hero</p>
                     </a>
                 </div>
                 <div class="list ashita">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Ashita Shinu Shoujo no Saigo no Hokagou</p>
                     </a>
                 </div>
                 <div class="list mangaka">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Ore no Kanojo ga Mangaka ni naru</p>
                     </a>
                 </div>
                 <div class="list hitomebore">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Hitomebore</p>
                     </a>
                 </div>
                 <div class="list line">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> LINE Yang Tak Pernah Terbalas</p>
                     </a>
                 </div>
                 <div class="list nozokimi">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Nozokimi</p>
                     </a>
                 </div>
                 <div class="list zombie">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Zombie Darake ni Natta</p>
                     </a>
                 </div>
                 <div class="list sachan">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Drugstore Tenin Sa-chan no Nichijo</p>
                     </a>
                 </div>
                 <div class="list anotoki">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Anotoki Kara, Zutto</p>
                     </a>
                 </div>
                 <div class="list deliquent">
-                    <a class="decorationlabel" href="">
+                    <a class="decorationlabel" href="index.html">
                         <p class="label"> Moto Yan Kanojo to Majime-kun</p>
                     </a>
                 </div>

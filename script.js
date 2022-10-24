@@ -74,8 +74,3 @@ function timeAgo(date) {
     return Math.floor(seconds) + " detik lalu";
 }
 
-document.getElementById('tagahumika').innerHTML = timeAgo('2022-09-1 1:44:00');
-document.getElementById('nozokimi').innerHTML = timeAgo('2022-08-31 18:44:00');
-document.getElementById('cuprum').innerHTML = timeAgo('2022-08-31 18:44:00');
-document.getElementById('toaru').innerHTML = timeAgo('2022-08-31 18:44:00');
-document.getElementById('ichika').innerHTML = timeAgo('2022-08-31 18:44:00');
