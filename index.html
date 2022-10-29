@@ -4,23 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
     <title>Riztranslation</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shorcut icon" href="assets/Icon/rizlogo.ico">
+    <link rel="preload" as="image" href="assets/Icon/rizlogo.svg">
+    <meta property="og:title" content="Riztranslation">
+    <meta property="og:type" content="object">
+    <meta property="og:url" content="http://riztranslation.dee.al">
+    <meta name="description"
+        content="Baca manga bahasa indonesia gratis!">
+    <meta property="og:description"
+        content="Baca manga bahasa indonesia gratis!">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/279405498_131183892823775_8441715809390536283_n.jpg?stp=dst-jpg_s350x350&_nc_cat=103&ccb=1-7&_nc_sid=dd9801&_nc_eui2=AeE8ufzoFfYQFrLq2Q56dTKpdZH1m88JCfh1kfWbzwkJ-AvKIKyLkkJoZEOErBmEBMk6UJ0jq4CyRh_41cuKZk0X&_nc_ohc=QMTZf4dyY68AX8QDXwe&_nc_oc=AQlxvu1l7ceiJ2xy2QSWcBRTSDi2N1rhpvWlyRdWrYTUURCaCFg5lHBb2r-S2fvXiEE&_nc_ht=scontent-sin6-4.xx&edm=ADwHzz8EAAAA&oh=00_AT8ZD9jvK0nti6hFFr0tKUqxPd6IlNst2mppszZJMZOxlQ&oe=635AEB4D">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:url" content="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/279405498_131183892823775_8441715809390536283_n.jpg?stp=dst-jpg_s350x350&_nc_cat=103&ccb=1-7&_nc_sid=dd9801&_nc_eui2=AeE8ufzoFfYQFrLq2Q56dTKpdZH1m88JCfh1kfWbzwkJ-AvKIKyLkkJoZEOErBmEBMk6UJ0jq4CyRh_41cuKZk0X&_nc_ohc=QMTZf4dyY68AX8QDXwe&_nc_oc=AQlxvu1l7ceiJ2xy2QSWcBRTSDi2N1rhpvWlyRdWrYTUURCaCFg5lHBb2r-S2fvXiEE&_nc_ht=scontent-sin6-4.xx&edm=ADwHzz8EAAAA&oh=00_AT8ZD9jvK0nti6hFFr0tKUqxPd6IlNst2mppszZJMZOxlQ&oe=635AEB4D">
+    <meta property="og:image:secure_url" content="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/279405498_131183892823775_8441715809390536283_n.jpg?stp=dst-jpg_s350x350&_nc_cat=103&ccb=1-7&_nc_sid=dd9801&_nc_eui2=AeE8ufzoFfYQFrLq2Q56dTKpdZH1m88JCfh1kfWbzwkJ-AvKIKyLkkJoZEOErBmEBMk6UJ0jq4CyRh_41cuKZk0X&_nc_ohc=QMTZf4dyY68AX8QDXwe&_nc_oc=AQlxvu1l7ceiJ2xy2QSWcBRTSDi2N1rhpvWlyRdWrYTUURCaCFg5lHBb2r-S2fvXiEE&_nc_ht=scontent-sin6-4.xx&edm=ADwHzz8EAAAA&oh=00_AT8ZD9jvK0nti6hFFr0tKUqxPd6IlNst2mppszZJMZOxlQ&oe=635AEB4D">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Riztranslation">
 </head>
 
-<body onload="loads()" oncontextmenu="return false;" ondragstart="return false;">
-    <div class="loading" id="loading">Website sedang dimuat...</div>
-    <div class="loading--bg" id="loadingBg"></div>
+<body class="load" onload="loads()" oncontextmenu="return false;" ondragstart="return false;">
+    <div class="loading--bg" id="loadingBg"> <div class="loading" id="loading"></div></div>
     <script>
         function loads() {
-                const loading = document.getElementById("loading");
-                const bg = document.getElementById("loadingBg");
-                loading.style.display = "none";
-                bg.style.display = "none";
+            const loading = document.getElementById("loading");
+            const bg = document.getElementById("loadingBg");
+            loading.style.display = "none";
+            bg.style.display = "none";
+            document.body.classList.remove('load')
         }
-</script>
+    </script>
     <!-- navbar -->
     <div class="container">
         <div class="bg"></div>
@@ -33,11 +49,39 @@
             <li class="text"><a id="infonav" href="#info">Info</a></li>
             <button id="mode" class="toggle">◩</button>
             <input id="search" class="search" type="text" placeholder="Cari..." list="manga">
-            <!-- <datalist id="manga" role="listbox">
-                <option value="https://riztranslation.github.io/tagahumika">Tagahumika</option>
-                <option value="https://riztranslation.github.io/osananajimi">Osananajimi ni Modoritai Bokura
-                </option>
-            </datalist> -->
+            <datalist id="manga" role="listbox">
+                <option value="https://riztranslation.dee.al/tagahumika">Tagahumika - Tagafumika</option>
+                <option value="Url belum ada..">Tsuka no ma no ichikan - 束の間の一花</option>
+                <option value="Url belum ada..">Osananajimi ni Modoritai Bokura - We Want to Be Childhood Friends Again</option>
+                <option value="Url belum ada..">Okyu No Trinity - Trinity of the Royal Palace</option>
+                <option value="Url belum ada..">Drugstore tenin sa-chan no nichijo - Drugstore tenin sa-chan no nichijo</option>
+                <option value="Url belum ada..">Parasite in Love - Koisuru Kiseichuu</option>
+                <option value="Url belum ada..">Rokudo Tosoki - Battle of The Six Realms</option>
+                <option value="Url belum ada..">Ore no Kanojo ga Mangaka ni Naru - My Girlfriend will be a Mangaka</option>
+                <option value="Url belum ada..">Kimi janakya Dame na Dorei Shoujo - 君じゃなきゃダメな奴隷少女</option>
+                <option value="Url belum ada..">Kimi ni Koisuru Satsujinki - Killer in Love</option>
+                <option value="Url belum ada..">Kuroha to Nijisuke - Kuroha & Nijisuke</option>
+                <option value="Url belum ada..">Another World Where I Can't Even Collapse and Die - Ikidaore mo Dekinai Konna Isekai ja</option>
+                <option value="Url belum ada..">Cuprum no Hanayome - Cuprum’s Bride</option>
+                <option value="Url belum ada..">Hatsukoi Maze - 
+                    First Love Maze</option>
+                <option value="Url belum ada..">Hyouka - 
+                    I Scream</option>
+                <option value="Url belum ada..">The Story of Never Getting Replied on LINE - 
+                    全然返ってこないLINEの話/option>
+                <option value="Url belum ada..">Former Delinquent Girlfriend and Mister Earnest - 
+                    元ヤン彼女と真面目くん</option>
+                <option value="Url belum ada..">Hitomebore - 
+                    Love at First Sight</option>
+                <option value="Url belum ada..">The High School Full of Zombies - 
+                    ゾンビだらけになった高校</option>
+                <option value="Url belum ada..">My Hero - 
+                Pahlawanku</option>
+                <option value="Url belum ada..">Nozokimi - 
+                    のぞき見</option>
+                <option value="Url belum ada..">Ashita shinu shoujo no saigo no houkago - 
+                Masa sepulang sekolah terakhir dari gadis yang besoknya akan mati</option>
+            </datalist>
         </ul>
         <script>
             document.getElementById("search").addEventListener("change", search);

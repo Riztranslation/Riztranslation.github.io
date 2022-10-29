@@ -22,22 +22,25 @@ body {
     background-color: rgb(47, 42, 42);
     user-select: none;
 }
+.load{
+    overflow: hidden;
+}
 
 .loading {
     z-index: 10;
-    height: 100vh;
     position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: gray;
-    text-shadow: 0 0 10px #FFFFFF;
-    animation: myAnim 2s ease 0s infinite normal forwards;
-    overflow: hidden;
+    /* animation: myAnim 2s ease 0s infinite normal forwards; */
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-image: url(assets/Icon/rizlogo.svg);
+    background-size: cover;
 }
 .loading--bg {
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     position: fixed;
     width: 100%;
@@ -126,7 +129,7 @@ li {
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
-    background-image: url(assets/Icon/rizlogo.png);
+    background-image: url(assets/Icon/rizlogo.svg);
     background-size: cover;
 }
 
