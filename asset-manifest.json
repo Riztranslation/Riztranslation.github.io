@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c660b5f4.css",
-    "main.js": "/static/js/main.e7386bc2.js",
+    "main.js": "/static/js/main.c80f9561.js",
     "static/js/107.faaa6b0d.chunk.js": "/static/js/107.faaa6b0d.chunk.js",
     "static/js/787.b701888c.chunk.js": "/static/js/787.b701888c.chunk.js",
     "static/media/rizlogo.svg": "/static/media/rizlogo.229eddbb6e681427c902.svg",
     "index.html": "/index.html",
     "main.c660b5f4.css.map": "/static/css/main.c660b5f4.css.map",
-    "main.e7386bc2.js.map": "/static/js/main.e7386bc2.js.map",
+    "main.c80f9561.js.map": "/static/js/main.c80f9561.js.map",
     "107.faaa6b0d.chunk.js.map": "/static/js/107.faaa6b0d.chunk.js.map",
     "787.b701888c.chunk.js.map": "/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c660b5f4.css",
-    "static/js/main.e7386bc2.js"
+    "static/js/main.c80f9561.js"
   ]
 }
