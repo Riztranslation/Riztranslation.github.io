@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.448f7a25.css",
-    "main.js": "/static/js/main.aa8c1bd4.js",
-    "static/js/107.faaa6b0d.chunk.js": "/static/js/107.faaa6b0d.chunk.js",
+    "main.css": "/static/css/main.d4ed2109.css",
+    "main.js": "/static/js/main.29e3e9ed.js",
+    "static/js/202.286f7f34.chunk.js": "/static/js/202.286f7f34.chunk.js",
     "static/js/787.b701888c.chunk.js": "/static/js/787.b701888c.chunk.js",
     "static/media/rizlogo.svg": "/static/media/rizlogo.229eddbb6e681427c902.svg",
     "index.html": "/index.html",
-    "main.448f7a25.css.map": "/static/css/main.448f7a25.css.map",
-    "main.aa8c1bd4.js.map": "/static/js/main.aa8c1bd4.js.map",
-    "107.faaa6b0d.chunk.js.map": "/static/js/107.faaa6b0d.chunk.js.map",
+    "main.d4ed2109.css.map": "/static/css/main.d4ed2109.css.map",
+    "main.29e3e9ed.js.map": "/static/js/main.29e3e9ed.js.map",
+    "202.286f7f34.chunk.js.map": "/static/js/202.286f7f34.chunk.js.map",
     "787.b701888c.chunk.js.map": "/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.448f7a25.css",
-    "static/js/main.aa8c1bd4.js"
+    "static/css/main.d4ed2109.css",
+    "static/js/main.29e3e9ed.js"
   ]
 }
